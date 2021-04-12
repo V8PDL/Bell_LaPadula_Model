@@ -1,0 +1,19 @@
+﻿<Window x:Class="BLP_model.Authorization_Window"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BLP_model"
+        mc:Ignorable="d"
+        Title="Авторизация" Width="350" Height="290" MinWidth="270" MinHeight="300">
+    <Grid>
+        <Button x:Name="Log_in_button" Content="Войти" HorizontalAlignment="Left" Margin="10,0,0,9.667" VerticalAlignment="Bottom" Width="75" FontSize="14" Click="Log_in_button_Click" TabIndex="4"/>
+        <Button x:Name="New_model_button" Content="Создать модель" HorizontalAlignment="Left" Margin="10,74,0,0" VerticalAlignment="Top" Width="150" FontSize="14" Click="New_model_button_Click" TabIndex="1"/>
+        <ComboBox x:Name="Models_Combobox" HorizontalAlignment="Stretch" Margin="10,44,9.667,0" VerticalAlignment="Top" Width="Auto" FontSize="14" IsReadOnly="True" SelectionChanged="Models_Combobox_SelectionChanged" TabIndex="0"/>
+        <Label Content="Логин" FontSize="14" HorizontalAlignment="Left" Margin="10,102,0,0" VerticalAlignment="Top"/>
+        <Label Content="Пароль" FontSize="14" HorizontalAlignment="Left" Margin="10,164,0,0" VerticalAlignment="Top"/>
+        <PasswordBox x:Name="Passwordbox" KeyUp="Passwordbox_KeyUp" HorizontalAlignment="Stretch" Margin="10,198,10.667,0" VerticalAlignment="Top" Height="23" FontSize="14" TabIndex="3"/>
+        <TextBox x:Name="Login_textbox" KeyUp="Login_textbox_KeyUp" HorizontalAlignment="Stretch" Height="23" Margin="10,136,9.667,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="14" TabIndex="2"/>
+        <Label Content="Модель" FontSize="14" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Window>
